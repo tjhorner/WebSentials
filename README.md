@@ -84,3 +84,12 @@ Success messages are good for indicating that you did something right or a reque
     </div>
 
 Simple, right?
+
+Textboxes
+-
+
+We all know about textboxes, let's make one.
+
+    <input id="textbox"></input>
+
+Tada, just add `#textbox` to an input and you have a nice textbox :).

@@ -188,3 +188,17 @@ button.btn-red:active{
 }
 
 /*End buttons*/
+
+/*glowy bootstrap-like textboxes*/
+
+#textbox
+{
+	transition: width 1s, height 1s, background-color 1s, box-shadow 1s;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+#textbox:focus{
+	box-shadow: 4px 4px 30px #0e73d8;
+}
+
