@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Fauna+One|Armata|Pathway+Gothic+One);
+
+/*WebSentials CSS by GeekyGamer14*/
+
+/* Main font*/
+body{
+	font-family: 'Armata', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/*Links*/
+a, a:before, a:after{
+	transition: color .5s;
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover, a:before:hover, a:after:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+/*Buttons*/
+button{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: gray;
+	cursor: hand;
+}
+
+button:hover{
+	background-color: DarkGray;
+}
