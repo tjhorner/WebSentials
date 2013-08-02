@@ -93,7 +93,9 @@ Success messages are good for indicating that you did something right or a reque
     </div>
     </div>
 
-Simple, right?
+There is also another method of hiding the errors:
+
+    hideErrorFade('#errorIdHere');
 
 Textboxes
 -
