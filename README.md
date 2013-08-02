@@ -6,6 +6,16 @@ Welcome to WebSentials, here is a quick Getting Started guide on how to use it.
 Getting Started
 =
 
+To get started, first you have to declare WebSentials into your HTML file, like so:
+
+    <link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
+    <script src="websentials.js"></script>
+
+Or, if you want to use the compressed version, change `websentials.css` and `websentials.js` to `websentials.min.css` and `websentials.min.js`.
+
+Features
+=
+
 Buttons
 -
 
