@@ -72,10 +72,10 @@ Success messages are good for indicating that you did something right or a reque
       &times;
     </div>
     <div class="success-header">
-      Crap, something went wrong with the code ._.
+      Good job! Something went correctly!
     </div>
     <div class="success-content">
-      Blah blah blah replace <code>this</code> with <code>that</code> and make sure there are no errors next time, idiot.
+      For once, you did something right in your life! Oh wait, that was the server. Nevermind, go back to your non-right life.
     </div>
     <div class="success-footer">
       <button onClick="hideError('#someGoodMessage');">I don't care, go on with it.</button>
