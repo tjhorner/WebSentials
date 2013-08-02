@@ -7,9 +7,93 @@ body{
 	font-family: 'Armata', sans-serif;
 }
 
-/*h1, h2, h3, h4, h5{
-	font-family: 'Pathway Gothic One', sans-serif;
-}*/
+/*"code" tags*/
+
+code, pre{
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	font-size: 13px;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+/*error*/
+
+.error-header{
+	font-size: 30px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.error-content{
+	padding-bottom: 5px;
+}
+
+.error{
+	background-color: #ff5c66;
+	border: 1px solid red;
+	font-size: 13px;
+	width: 500px;
+	text-align: left;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+.error-exit{
+	text-align: right;
+	position: absolute;
+	left: 910px;
+	color:gray;
+	font-size: 30px;
+	cursor: hand;
+}
+
+.error-exit:hover{
+	color: black;
+}
+
+/*success*/
+.success-header{
+	font-size: 30px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.success-content{
+	padding-bottom: 5px;
+}
+
+.success{
+	background-color: #7fff70;
+	border: 1px solid green;
+	font-size: 13px;
+	width: 500px;
+	text-align: left;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+.success-exit{
+	text-align: right;
+	position: absolute;
+	left: 910px;
+	color:gray;
+	font-size: 30px;
+	cursor: hand;
+}
+
+.success-exit:hover{
+	color: black;
+}
+
 
 /*Links*/
 a, a:before, a:after{
@@ -64,7 +148,7 @@ button.btn-confirm:active{
 	background-color: blue;
 }
 
-/*black button (no racism intended)*/
+/*black button*/
 button.btn-black{
 	background-color: black;
 }
@@ -74,5 +158,47 @@ button.btn-black:hover{
 }
 
 button.btn-black:active{
-	background-color: black;
+	background-color: gray;
 }
+
+/*green confirm button*/
+button.btn-green{
+	background-color: #07ca1f;
+}
+
+button.btn-green:hover{
+	background-color: #06a219;
+}
+
+button.btn-green:active{
+	background-color: #00700e;
+}
+
+/*red warning/danger button */
+button.btn-red{
+	background-color: #f51a00;
+}
+
+button.btn-red:hover{
+	background-color: #da2f1b;
+}
+
+button.btn-red:active{
+	background-color: #c73a29;
+}
+
+/*End buttons*/
+
+/*glowy bootstrap-like textboxes*/
+
+#textbox
+{
+	transition: width 1s, height 1s, background-color 1s, box-shadow 1s;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+#textbox:focus{
+	box-shadow: 4px 4px 30px #0e73d8;
+}
+
