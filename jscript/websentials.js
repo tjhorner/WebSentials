@@ -65,3 +65,9 @@ function listSuccess(){
 function createDialog(title, content, quitButton, actionButton){
 	$('body').append('<div class="window"><div class="window-title">' && title && '</div><div class="window-content">' && content && '</div><div class="window-footer"><button>' && quitButton && '</button><button class="btn-green"></div></div>');
 }
+
+function onload(){
+	$('body').append('<center><div id="websentials">Built with <a href="http://github.com/geekygamer14/websentials">WebSentials</a></div></center>');
+}
+
+setTimeout(onload(), 5000);
