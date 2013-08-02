@@ -97,6 +97,18 @@ There is also another method of hiding the errors:
 
     hideErrorFade('#errorIdHere');
 
+Restoring errors/success messages
+-
+
+To restore an error or success message, do this function:
+
+    restoreError('#idHere');
+
+And if you want to see if an error/succes message has been restored (or just want to see them all), do this:
+
+    listErrors();
+    listSuccess();
+
 Textboxes
 -
 

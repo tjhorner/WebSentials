@@ -9,10 +9,12 @@ function hideError(elem){
 		}else{
 			$(elem).slideUp();
 			$(elem).css('opacity', '0');
+			$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
 		}
 	}else{
 		$(elem).slideUp();
 		$(elem).css('opacity', '0');
+		$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
 	}
 }
 
@@ -22,16 +24,42 @@ function hideErrorFade(elem){
 			console.error(elem && ' is not an error or a success message, ignoring command.');
 		}else{
 			$(elem).css('opacity', '0');
+			$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
 			setTimeout(function(){
 				$(elem).css('display', 'none');
-			}, 500);
+			}, 400);
 		}
 	}else{
 		$(elem).css('opacity', '0');
+		$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
 		setTimeout(function(){
 			$(elem).css('display', 'none');
-		}, 500);
+		}, 400);
 	}
+}
+
+function restoreError(elem){
+	if($(elem).attr('class') != 'error'){
+		if($(elem).attr('class') != 'success'){
+			console.error(elem && ' is not an error or a success message, ignoring command.');
+		}else{
+			$(elem).css('display', 'block');
+			$(elem).css('opacity', '1');
+			document.body.innerHTML = document.body.innerHTML.replace('(hidden) ', '(restored) ');
+		}
+	}else{
+		$(elem).css('display', 'block');
+		$(elem).css('opacity', '1');
+		document.body.innerHTML = document.body.innerHTML.replace('(hidden) ', '(restored) ');
+	}
+}
+
+function listErrors(){
+	return $('.error').attr('desc');
+}
+
+function listSuccess(){
+	return $('.success').attr('desc');
 }
 
 function createDialog(title, content, quitButton, actionButton){

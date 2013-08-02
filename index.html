@@ -1,6 +1,7 @@
 <html>
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<title>WebSentials | GeekyGamer14</title>
 	<script src="jscript/websentials.js"></script> <!-- Use websentials.min.js if you have the minimalized version -->
 	<link type="text/css" rel="stylesheet" href="css/websentials.css"> </link>
 </head>
@@ -17,7 +18,7 @@
 
 		Examples:
 		<h1>Error message</h1>
-		<div class="error" id="boo">
+		<div class="error" id="boo" desc="Sample error message">
 		<div class="error-exit" onclick="hideError($('#boo'))">
 			&times;
 		</div>
@@ -46,7 +47,7 @@
 
 		<br></br>
 		<h1>Success message (This one uses <code>hideErrorFade</code>)</h1>
-		<div class="success" id="yay">
+		<div class="success" id="yay" desc="Sample success message">
 		<div class="success-exit" onClick="hideErrorFade($('#yay'))">
 			&times;
 		</div>
