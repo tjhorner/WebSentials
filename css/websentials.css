@@ -19,6 +19,82 @@ code, pre{
 	border-radius: 3px;
 }
 
+/*error*/
+
+.error-header{
+	font-size: 30px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.error-content{
+	padding-bottom: 5px;
+}
+
+.error{
+	background-color: #ff5c66;
+	border: 1px solid red;
+	font-size: 13px;
+	width: 500px;
+	text-align: left;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+.error-exit{
+	text-align: right;
+	position: absolute;
+	left: 910px;
+	color:gray;
+	font-size: 30px;
+	cursor: hand;
+}
+
+.error-exit:hover{
+	color: black;
+}
+
+/*success*/
+.success-header{
+	font-size: 30px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.success-content{
+	padding-bottom: 5px;
+}
+
+.success{
+	background-color: #7fff70;
+	border: 1px solid green;
+	font-size: 13px;
+	width: 500px;
+	text-align: left;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+.success-exit{
+	text-align: right;
+	position: absolute;
+	left: 910px;
+	color:gray;
+	font-size: 30px;
+	cursor: hand;
+}
+
+.success-exit:hover{
+	color: black;
+}
+
+
 /*Links*/
 a, a:before, a:after{
 	-webkit-transition: color .5s;
@@ -98,5 +174,17 @@ button.btn-green:active{
 	background-color: #00700e;
 }
 
+/*red warning/danger button */
+button.btn-red{
+	background-color: #f51a00;
+}
+
+button.btn-red:hover{
+	background-color: #da2f1b;
+}
+
+button.btn-red:active{
+	background-color: #c73a29;
+}
 
 /*End buttons*/
