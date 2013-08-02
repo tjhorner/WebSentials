@@ -21,6 +21,15 @@ Say we want to get fancy and add a little blue to it:
     
 This is good for a sorta-non-important confirmation button.
 
+To make any button larger than usual, to grab attention, just add the `btn-big` class to any button.
+
+Example:
+
+    <!-- Big confirm button -->
+    <button class="btn-confirm btn-big">Here is a big confirm button</button>
+    
+    <!--Big regular button -->
+    <button class="btn-big">Big button!</button>
 
 More to come soon
 =
