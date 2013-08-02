@@ -7,9 +7,17 @@ body{
 	font-family: 'Armata', sans-serif;
 }
 
-/*h1, h2, h3, h4, h5{
-	font-family: 'Pathway Gothic One', sans-serif;
-}*/
+/*"code" tags*/
+
+code, pre{
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	font-size: 13px;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
 
 /*Links*/
 a, a:before, a:after{
@@ -64,7 +72,7 @@ button.btn-confirm:active{
 	background-color: blue;
 }
 
-/*black button (no racism intended)*/
+/*black button*/
 button.btn-black{
 	background-color: black;
 }
@@ -74,5 +82,21 @@ button.btn-black:hover{
 }
 
 button.btn-black:active{
-	background-color: black;
+	background-color: gray;
 }
+
+/*green confirm button*/
+button.btn-green{
+	background-color: #07ca1f;
+}
+
+button.btn-green:hover{
+	background-color: #06a219;
+}
+
+button.btn-green:active{
+	background-color: #00700e;
+}
+
+
+/*End buttons*/
