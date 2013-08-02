@@ -13,7 +13,7 @@ body{
 
 /*Links*/
 a, a:before, a:after{
-	-webkit-transition: 
+	-webkit-transition: color .5s;
 	transition: color .5s;
 	text-decoration: none;
 	color: gray;
@@ -27,9 +27,11 @@ a:hover, a:before:hover, a:after:hover{
 /*Buttons*/
 button{
 	-moz-border-radius: 5px;
+	-webkit-transition: background-color .2s;
+	transition: background-color .2s;
 	border-radius: 5px;
 	color: white;
-	height: 50px;
+	height: 30px;
 	border:none;
 	background-color: #969696;
 	cursor: hand;
@@ -39,6 +41,38 @@ button:hover{
 	background-color: gray;
 }
 
-button .btn-big{
-	font-size: 50px;
+button:active{
+	background-color: black;
+}
+
+/*big button*/
+button.btn-big{
+	font-size: 30px;
+	height: 60px;
+}
+
+/*confirmation button*/
+button.btn-confirm{
+	background-color: #8784e6;
+}
+
+button.btn-confirm:hover{
+	background-color: #6f6af0;
+}
+
+button.btn-confirm:active{
+	background-color: blue;
+}
+
+/*black button (no racism intended)*/
+button.btn-black{
+	background-color: black;
+}
+
+button.btn-black:hover{
+	background-color: #454545;
+}
+
+button.btn-black:active{
+	background-color: black;
 }
