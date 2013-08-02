@@ -7,12 +7,13 @@ body{
 	font-family: 'Armata', sans-serif;
 }
 
-h1, h2, h3, h4, h5{
+/*h1, h2, h3, h4, h5{
 	font-family: 'Pathway Gothic One', sans-serif;
-}
+}*/
 
 /*Links*/
 a, a:before, a:after{
+	-webkit-transition: 
 	transition: color .5s;
 	text-decoration: none;
 	color: gray;
@@ -27,14 +28,17 @@ a:hover, a:before:hover, a:after:hover{
 button{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background-color: gray;
+	color: white;
+	height: 50px;
+	border:none;
+	background-color: #969696;
 	cursor: hand;
 }
 
 button:hover{
-	background-color: DarkGray;
+	background-color: gray;
 }
 
-.btn-big{
-	
+button .btn-big{
+	font-size: 50px;
 }
