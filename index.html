@@ -8,6 +8,7 @@
 <body nocopy="true">
 	<center>
 		<h1>Welcome to WebSentials.</h1>
+		<img src="img/ws.png" title="WebSentials logo"></img>
 		<h2>Easy-to-use, cross browser support essentials for your website.</h2>
 		<a href="https://github.com/GeekyGamer14/WebSentials/releases"><button class="btn-big btn-green">Download WebSentials</button></a>
 		<p id="fork"><iframe src="http://ghbtns.com/github-btn.html?user=GeekyGamer14&repo=WebSentials&type=fork&count=true&size=large"allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
@@ -82,7 +83,24 @@
 		<p><button class="btn-confirm btn-big">Big blue button</button></p>
 		<p><button class="btn-green btn-big">Big green button</button></p>
 		<p><button class="btn-red btn-big">Big red button</button></p>
+		<br></br>
+		<h1>Progress bars</h1>
+		<span id="progresslabel">0%</span>
+		<div class="progressbar">
+		<div class="progressbar-inner" id="progress">
+		</div>
+		</div>
+		Percentage (with % sign)<input id="textbox"></input>
+		<button class="btn-green" id="setprogress" onclick="progressBar('#progress', $('#textbox').val(), '#progresslabel');">Set progress bar</button>
+		<button class="btn-red" onclick="progressBar('#progress', '0%', '#progresslabel');">Reset progress bar</button>
 		<div id="footer">&copy; GeekyGamer14 2013</div>
+	<script>
+$("#textbox").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#setprogress").click();
+    }
+});
+	</script>
 	</center>
 </body>	
 </html>

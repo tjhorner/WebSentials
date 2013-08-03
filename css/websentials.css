@@ -230,3 +230,21 @@ button.btn-red:active{
 	font-size: 30px;
 	font-weight: bold;
 }
+
+/*progress bars*/
+
+.progressbar{
+	width: 600px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.progressbar-inner{
+	height: 50px;
+	float:left;
+	transition: width 1s;
+	background-color: blue;
+	width: 0px;
+	border-radius: 3px;
+}

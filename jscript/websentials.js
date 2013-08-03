@@ -70,6 +70,46 @@ function listSuccess(){
 	return $('.success').attr('desc');
 }
 
+/*progress bars*/
+
+function progressBar(progressBarId, percentage, label){
+	$(progressBarId).css('width', percentage);
+	if(label == 'none'){
+		console.log('no label selected, ignoring');
+	}else{
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		setTimeout(function(){
+			$(label).text(Math.random() * (100 - 0.0) + 0);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		}, 100);
+		setTimeout(function(){
+			$(label).text(percentage);
+		}, 1000);
+	}
+}
+
 //this doesnt work yet. dont try it.
 //function createDialog(title, content, quitButton, actionButton){
 //	$('body').append('<div class="window"><div class="window-title">' && title && '</div><div class="window-content">' && content && '</div><div class="window-footer"><button>' && quitButton && '</button><button class="btn-green"></div></div>');

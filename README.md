@@ -54,7 +54,7 @@ Error messages
 
 If you want to display an error to a user on your website, you can use the error messages (still under development, but work.)
 
-    <div class="error" id="someError">
+    <div class="error" id="someError" desc="This is the name in listErrors()">
     <div class="error-exit" onClick="hideError('#someError');">
       &times;
     </div>
@@ -77,7 +77,7 @@ Success Messages
 
 Success messages are good for indicating that you did something right or a request came through as it should. It's exactly like an error message, except with green:
 
-    <div class="success" id="someGoodMessage">
+    <div class="success" id="someGoodMessage" desc="This is the name in listSuccess()">
     <div class="success-exit" onClick="hideError('#someGoodMessage');"> <!-- Yes, you still use hideError('#successIdHere'); -->
       &times;
     </div>
@@ -117,3 +117,30 @@ We all know about textboxes, let's make one.
     <input id="textbox"></input>
 
 Tada, just add `#textbox` to an input and you have a nice textbox :).
+
+Notifications
+-
+
+To make a notification, type this code:
+
+    <div class="notification">
+    <div class="notification-header">
+      Notification
+    </div>
+    <div class="notification-content">
+      Content!
+    </div>
+    </div>
+
+Progress bars
+-
+
+To create a download or anything progress bar, you have to create 2 `div`s.
+The first `div` is the border. The second one is the inner progress bar.
+
+    <div class="progressbar">
+    <div class="progressbar-inner" id="progressbar1">
+    </div>
+    </div>
+
+To use the progress bar, set the width class to `(integer)%`. For example, if I wanted it to be half full, I would set it to `50%`. You can change this with `progressBar('#idOfProgressbar', 'percentage', label);`. The `label` parameter is the ID of the label that shows the current percentage. If you don't have a label, just set it to `'none'`.
