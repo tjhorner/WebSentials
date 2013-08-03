@@ -1,12 +1,14 @@
 <html>
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<title>WebSentials | GeekyGamer14</title>
 	<script src="jscript/websentials.js"></script> <!-- Use websentials.min.js if you have the minimalized version -->
 	<link type="text/css" rel="stylesheet" href="css/websentials.css"> </link>
 </head>
 <body nocopy="true">
 	<center>
 		<h1>Welcome to WebSentials.</h1>
+		<img src="img/ws.png" title="WebSentials logo"></img>
 		<h2>Easy-to-use, cross browser support essentials for your website.</h2>
 		<a href="https://github.com/GeekyGamer14/WebSentials/releases"><button class="btn-big btn-green">Download WebSentials</button></a>
 		<p id="fork"><iframe src="http://ghbtns.com/github-btn.html?user=GeekyGamer14&repo=WebSentials&type=fork&count=true&size=large"allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
@@ -17,7 +19,7 @@
 
 		Examples:
 		<h1>Error message</h1>
-		<div class="error" id="boo">
+		<div class="error" id="boo" desc="Sample error message">
 		<div class="error-exit" onclick="hideError($('#boo'))">
 			&times;
 		</div>
@@ -37,16 +39,14 @@
 		</div>
 
 		<div class="error-footer">
-			<button onclick="hideError($('#boo'))">Nah</button> <button class=
-			"btn-red" onclick=
-			"if($(this).text() != 'Are you really sure?'){$(this).text('Are you really sure?')}else{ $(this).text('Too bad. Lol'); $(this).slideUp();}">
+			<button onclick="hideError($('#boo'))">Nah</button> <button class="btn-red" onclick="if($(this).text() != 'Are you really sure?'){$(this).text('Are you really sure?')}else{ $(this).text('Too bad. Lol'); $(this).slideUp();}">
 			This could break something...</button>
 		</div>
 	</div>
-
+		<p>This has the class <code>error</code>.</p>
 		<br></br>
 		<h1>Success message (This one uses <code>hideErrorFade</code>)</h1>
-		<div class="success" id="yay">
+		<div class="success" id="yay" desc="Sample success message">
 		<div class="success-exit" onClick="hideErrorFade($('#yay'))">
 			&times;
 		</div>
@@ -61,11 +61,23 @@
 		<button class="btn-green">Sure</button>
 		</div>
 		</div>
+		<p>This has the class <code>success</code>.</p>
 		<br></br>
-
+		<h1>Notifications</h1>
+		<div class="notification">
+		<div class="notification-header">		
+			Hey!
+		</div>
+		<div class="notification-content">
+			Just wanted to tell you, hi :3
+		</div>
+		</div>
+		<br></br>
 		<h1>Buttons</h1>
 		<p><button>Regular button</button></p>
+		<p>This has no class.</p>
 		<p><button class="btn-black">Black/inverted button</button></p>
+		<p>This has the class <code>btn-black</code>.</p>
 		<p><button class="btn-confirm">Blue button</button></p>
 		<p><button class="btn-green">Green button</button></p>
 		<p><button class="btn-red">Red button</button></p>
@@ -74,7 +86,24 @@
 		<p><button class="btn-confirm btn-big">Big blue button</button></p>
 		<p><button class="btn-green btn-big">Big green button</button></p>
 		<p><button class="btn-red btn-big">Big red button</button></p>
+		<br></br>
+		<h1>Progress bars</h1>
+		<span id="progresslabel">0%</span>
+		<div class="progressbar">
+		<div class="progressbar-inner" id="progress">
+		</div>
+		</div>
+		Percentage (with % sign)<input id="textbox"></input>
+		<button class="btn-green" id="setprogress" onclick="progressBar('#progress', $('#textbox').val(), '#progresslabel');">Set progress bar</button>
+		<button class="btn-red" onclick="progressBar('#progress', '0%', '#progresslabel');">Reset progress bar</button>
 		<div id="footer">&copy; GeekyGamer14 2013</div>
+	<script>
+$("#textbox").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#setprogress").click();
+    }
+});
+	</script>
 	</center>
 </body>	
 </html>

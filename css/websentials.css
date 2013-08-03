@@ -23,6 +23,7 @@ code, pre{
 
 .error-header{
 	font-size: 30px;
+	left: 50px;
 	padding-bottom: 10px;
 	padding-top: 5px;
 	text-align: left;
@@ -97,7 +98,6 @@ code, pre{
 .success-exit:hover{
 	color: black;
 }
-
 
 /*Links*/
 a, a:before, a:after{
@@ -212,4 +212,40 @@ button.btn-red:active{
 	left: auto;
 	right: auto;
 	top: 50px;
+}
+
+/*notifications*/
+
+.notification{
+	background-color: #4f8cb0;
+	border: 1px solid #2221d4;
+	font-size: 13px;
+	width: 600px;
+	padding: 6px 10px;
+	border-radius: 3px;
+	text-align: left;
+}
+
+.notification-header{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*progress bars*/
+
+.progressbar{
+	width: 600px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.progressbar-inner{
+	height: 50px;
+	float:left;
+	max-width: 600px;
+	transition: width 1s;
+	background-color: blue;
+	width: 0px;
+	border-radius: 3px;
 }
