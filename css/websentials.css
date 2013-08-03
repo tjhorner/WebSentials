@@ -243,6 +243,7 @@ button.btn-red:active{
 .progressbar-inner{
 	height: 50px;
 	float:left;
+	max-width: 600px;
 	transition: width 1s;
 	background-color: blue;
 	width: 0px;
