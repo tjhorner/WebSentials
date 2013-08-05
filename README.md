@@ -55,9 +55,6 @@ Error messages
 If you want to display an error to a user on your website, you can use the error messages (still under development, but work.)
 
     <div class="error" id="someError" desc="This is the name in listErrors()">
-    <div class="error-exit" onClick="hideError('#someError');">
-      &times;
-    </div>
     <div class="error-header">
       Crap, something went wrong with the code ._.
     </div>
@@ -70,7 +67,7 @@ If you want to display an error to a user on your website, you can use the error
     </div>
     </div>
 
-Wasn't that confusing? Here's the breakdown. For the main error box, put the class `error`. If you want an exit sign, make another div with the class `error-exit` right after the error div. For your header, make another div with `error-header` after the exit sign (or the main error if you have no exit sign.) Put the content inside of the `error-content` div and the buttons (or something else) inside of the `error-footer` div. To make the close button work, you have to put `onClick="hideError('#yourErrorId')"` inside of the exit button and whatever other button you want. Simple once you have it down.
+Wasn't that confusing? Here's the breakdown. For the main error box, put the class `error`. For your header, make another div with `error-header` after the main error div. Put the content inside of the `error-content` div and the buttons (or something else) inside of the `error-footer` div. To make the close button work, you have to put `onClick="hideError('#yourErrorId')"` inside of the exit button and whatever other button you want. Simple once you have it down.
 
 Success Messages
 -
@@ -78,9 +75,6 @@ Success Messages
 Success messages are good for indicating that you did something right or a request came through as it should. It's exactly like an error message, except with green:
 
     <div class="success" id="someGoodMessage" desc="This is the name in listSuccess()">
-    <div class="success-exit" onClick="hideError('#someGoodMessage');"> <!-- Yes, you still use hideError('#successIdHere'); -->
-      &times;
-    </div>
     <div class="success-header">
       Good job! Something went correctly!
     </div>
