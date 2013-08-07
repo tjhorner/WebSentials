@@ -116,7 +116,7 @@ Notifications
 -
 
 To make a notification, type this code:
-    ```html
+
     <div class="notification">
     <div class="notification-header">
       Notification
@@ -125,7 +125,6 @@ To make a notification, type this code:
       Content!
     </div>
     </div>
-    ```
 
 Progress bars
 -
