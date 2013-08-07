@@ -4,41 +4,47 @@
 
 
 //hide error/success, normal
-function hideError(elem){
+function hideError(elem, method){
 	if($(elem).attr('class') != 'error'){
 		if($(elem).attr('class') != 'success'){
 			console.error(elem && ' is not an error or a success message, ignoring command.');
 		}else{
+			if(method == 'slide'){
+				$(elem).slideUp();
+				$(elem).css('opacity', '0');
+				$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
+				console.log('hid error with method slide');
+			}else{
+				if(method == 'fade'){
+					$(elem).css('opacity', '0');
+					$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
+					setTimeout(function(){
+						$(elem).css('display', 'none');
+					}, 400);
+					console.log('hid error with method fade');
+				}else{
+					console.error('websentials.hideError: invalid hide method. valid methods are slide or fade.');
+				}
+			}
+		}
+	}else{
+		if(method == 'slide'){
 			$(elem).slideUp();
 			$(elem).css('opacity', '0');
 			$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-		}
-	}else{
-		$(elem).slideUp();
-		$(elem).css('opacity', '0');
-		$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-	}
-}
-
-//hide error/success, fade
-//TODO add method attribute in hideError function
-function hideErrorFade(elem){
-	if($(elem).attr('class') != 'error'){
-		if($(elem).attr('class') != 'success'){
-			console.error(elem && ' is not an error or a success message, ignoring command.');
+			console.log('hid error with method slide');
 		}else{
-			$(elem).css('opacity', '0');
-			$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-			setTimeout(function(){
-				$(elem).css('display', 'none');
-			}, 400);
+			if(method == 'fade'){
+				$(elem).css('opacity', '0');
+				$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
+				setTimeout(function(){
+					$(elem).css('display', 'none');
+				}, 400);
+				console.log('hid error with method fade');
+			}else{
+				console.error('websentials.hideError: invalid hide method. valid methods are slide or fade.');
+			}
 		}
-	}else{
-		$(elem).css('opacity', '0');
-		$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-		setTimeout(function(){
-			$(elem).css('display', 'none');
-		}, 400);
 	}
 }
 

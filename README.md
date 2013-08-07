@@ -62,12 +62,12 @@ If you want to display an error to a user on your website, you can use the error
       Blah blah blah replace <code>this</code> with <code>that</code> and make sure there are no errors next time, idiot.
     </div>
     <div class="error-footer">
-      <button onClick="hideError('#someError');">I don't care, go on with it.</button>
+      <button onClick="hideError('#someError', 'slide');">I don't care, go on with it.</button>
       <button class="btn btn-green">Fix it</button>
     </div>
     </div>
 
-Wasn't that confusing? Here's the breakdown. For the main error box, put the class `error`. For your header, make another div with `error-header` after the main error div. Put the content inside of the `error-content` div and the buttons (or something else) inside of the `error-footer` div. To make the close button work, you have to put `onClick="hideError('#yourErrorId')"` inside of the exit button and whatever other button you want. Simple once you have it down.
+Wasn't that confusing? Here's the breakdown. For the main error box, put the class `error`. For your header, make another div with `error-header` after the main error div. Put the content inside of the `error-content` div and the buttons (or something else) inside of the `error-footer` div. To make the close button work, you have to put `onClick="hideError('#yourErrorId', 'method-here')"` inside of the exit button and whatever other button you want. The `method-here` is either `slide` or `fade` depending on which one you want. Simple once you have it down.
 
 Success Messages
 -
@@ -82,14 +82,14 @@ Success messages are good for indicating that you did something right or a reque
       For once, you did something right in your life! Oh wait, that was the server. Nevermind, go back to your non-right life.
     </div>
     <div class="success-footer">
-      <button onClick="hideError('#someGoodMessage');">I don't care, go on with it.</button>
+      <button onClick="hideError('#someGoodMessage', 'slide');">I don't care, go on with it.</button>
       <button class="btn btn-red">Delete the universe</button>
     </div>
     </div>
 
 There is also another method of hiding the errors:
 
-    hideErrorFade('#errorIdHere');
+    hideError('#errorIdHere', 'fade');
 
 Restoring errors/success messages
 -
