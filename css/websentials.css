@@ -47,18 +47,6 @@ code, pre{
 	border-radius: 3px;
 }
 
-.error-exit{
-	text-align: right;
-	position: absolute;
-	left: 910px;
-	color:gray;
-	font-size: 30px;
-	cursor: hand;
-}
-
-.error-exit:hover{
-	color: black;
-}
 
 /*success*/
 .success-header{
@@ -84,19 +72,6 @@ code, pre{
 	overflow: auto;
 	padding: 6px 10px;
 	border-radius: 3px;
-}
-
-.success-exit{
-	text-align: right;
-	position: absolute;
-	left: 910px;
-	color:gray;
-	font-size: 30px;
-	cursor: hand;
-}
-
-.success-exit:hover{
-	color: black;
 }
 
 /*Links*/
