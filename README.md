@@ -6,12 +6,20 @@ Welcome to WebSentials, here is a quick Getting Started guide on how to use it.
 Getting Started
 =
 
+Getting the code
+-
+
+If you're new to Git, make sure you have [set up Git](https://help.github.com/articles/set-up-git) and [created a repo](https://help.github.com/articles/create-a-repo). Once you have that done, and you're inside of your repository, execute this one simple line of code.
+
+    git clone https://github.com/GeekyGamer14/WebSentials.git
+
+Injecting WebSentials into your HTML.
+-
+
 To get started, first you have to declare WebSentials into your HTML file, like so:
 
     <link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
     <script src="websentials.js"></script>
-
-Or, if you want to use the compressed version, change `websentials.css` and `websentials.js` to `websentials.min.css` and `websentials.min.js`.
 
 Features
 =
