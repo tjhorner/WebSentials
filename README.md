@@ -149,6 +149,11 @@ The first `div` is the border. The second one is the inner progress bar.
 
 To use the progress bar, set the width class to `(integer)%`. For example, if I wanted it to be half full, I would set it to `50%`. You can change this with `progressBar('#idOfProgressbar', 'percentage', label);`. The `label` parameter is the ID of the label that shows the current percentage. If you don't have a label, just set it to `'none'`.
 
+Accept buttons
+-
+
+To make an accept button (hit enter to click), just add `id="accept"` to a button and you're all set!
+
 Todo:
 
  - Make a `success-close` and `error-close` for all screen sizes.

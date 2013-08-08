@@ -116,7 +116,11 @@ function progressBar(progressBarId, percentage, label){
 	}
 }
 
-//this doesnt work yet. dont try it.
-//function createDialog(title, content, quitButton, actionButton){
-//	$('body').append('<div class="window"><div class="window-title">' && title && '</div><div class="window-content">' && content && '</div><div class="window-footer"><button>' && quitButton && '</button><button class="btn-green"></div></div>');
-//}
+/*accept button*/
+if($('#accept') != []){
+	$("body").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#accept").click();
+		}
+	});
+}
