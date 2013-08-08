@@ -27,7 +27,7 @@ Here is an example regular (gray) button:
     
 Say we want to get fancy and add a little blue to it:
 
-    <button class="btn-confirm">Oooh! A pretty blue button!</button>
+    <button class="btn-blue">Oooh! A pretty blue button!</button>
     
 This is good for a sorta-non-important confirmation button.
 

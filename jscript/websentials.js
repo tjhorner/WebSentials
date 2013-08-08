@@ -3,7 +3,7 @@
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js
 
 
-//hide error/success, normal
+//hide error/success
 function hideError(elem, method){
 	if($(elem).attr('class') != 'error'){
 		if($(elem).attr('class') != 'success'){
