@@ -9,9 +9,11 @@ Getting Started
 Getting the code
 -
 
-If you're new to Git, make sure you have [set up Git](https://help.github.com/articles/set-up-git) and [created a repo](https://help.github.com/articles/create-a-repo). Once you have that done, and you're inside of your repository, execute this one simple line of code.
+If you're new to Git, make sure you have [set up Git](https://help.github.com/articles/set-up-git). Once you have that done, execute this one simple line of code.
 
-    git clone https://github.com/GeekyGamer14/WebSentials.git
+    git fetch https://github.com/GeekyGamer14/WebSentials.git
+
+Git should now clone the code for WebSentials into a folder called WebSentials, and whenever an update comes along, just execute `git fetch https://github.com/GeekyGamer14/WebSentials.git` again and it will update!
 
 Injecting WebSentials into your HTML.
 -
