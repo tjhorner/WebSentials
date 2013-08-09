@@ -154,7 +154,7 @@ Accept buttons
 
 To make an accept button (hit enter to click), just add `id="accept"` to a button and you're all set!
 
-functionCreator&trade;*!
+functionCreator!&trade;*
 -
 
 This is basically a noob-friendly JavaScript compiler. To use it, just use this function.
