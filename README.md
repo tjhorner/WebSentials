@@ -154,14 +154,14 @@ Accept buttons
 
 To make an accept button (hit enter to click), just add `id="accept"` to a button and you're all set!
 
-functionCreator&tm;*!
+functionCreator&trade;*!
 -
 
 This is basically a noob-friendly JavaScript compiler. To use it, just use this function.
 
     functionCreator("create a variable test that is equal to 'pie' then create a variable arraything that is an array");
 
-It compiles JavaScript in a noob-friendly way. Use `create a variable variablename` to create a variable. Use `that is equal to` to signify an equal sign. To make a semicolon, just type `then`. To create a variable equal to an array, type in `create a variable variablename that is an array`. It's JavaScript, in plain English!&tm;*
+It compiles JavaScript in a noob-friendly way. Use `create a variable variablename` to create a variable. Use `that is equal to` to signify an equal sign. To make a semicolon, just type `then`. To create a variable equal to an array, type in `create a variable variablename that is an array`. It's JavaScript, in plain English!&trade;*
 
 Todo:
 
