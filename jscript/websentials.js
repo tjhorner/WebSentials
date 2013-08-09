@@ -124,3 +124,17 @@ if($('#accept') != []){
 		}
 	});
 }
+
+/* built-in function creator!*/
+function functionCreator(str){
+	var s1 = str.replace(/create a variable/gi, 'var');
+	var s2 = s1.replace(/that is equal to/gi, '=');
+	var s3 = s2.replace(/then/gi, ';');
+	var final = s3.replace(/that is an array/gi, '= new Array()');
+	console.log('Your function: ');
+	return final;
+}
+
+
+
+
