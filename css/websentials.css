@@ -114,16 +114,16 @@ button.btn-big{
 	height: 60px;
 }
 
-/*confirmation button*/
-button.btn-confirm{
+/*blue button*/
+button.btn-blue{
 	background-color: #8784e6;
 }
 
-button.btn-confirm:hover{
+button.btn-blue:hover{
 	background-color: #6f6af0;
 }
 
-button.btn-confirm:active{
+button.btn-blue:active{
 	background-color: blue;
 }
 

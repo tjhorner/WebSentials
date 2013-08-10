@@ -3,7 +3,7 @@
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js
 
 
-//hide error/success, normal
+//hide error/success
 function hideError(elem, method){
 	if($(elem).attr('class') != 'error'){
 		if($(elem).attr('class') != 'success'){
@@ -116,7 +116,25 @@ function progressBar(progressBarId, percentage, label){
 	}
 }
 
-//this doesnt work yet. dont try it.
-//function createDialog(title, content, quitButton, actionButton){
-//	$('body').append('<div class="window"><div class="window-title">' && title && '</div><div class="window-content">' && content && '</div><div class="window-footer"><button>' && quitButton && '</button><button class="btn-green"></div></div>');
-//}
+/*accept button*/
+if($('#accept') != []){
+	$("body").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#accept").click();
+		}
+	});
+}
+
+/* built-in function creator!*/
+function functionCreator(str){
+	var s1 = str.replace(/create a variable/gi, 'var');
+	var s2 = s1.replace(/that is equal to/gi, '=');
+	var s3 = s2.replace(/then/gi, ';');
+	var final = s3.replace(/that is an array/gi, '= new Array()');
+	console.log('Your function: ');
+	return final;
+}
+
+
+
+
