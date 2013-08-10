@@ -20,8 +20,10 @@ Injecting WebSentials into your HTML.
 
 To get started, first you have to declare WebSentials into your HTML file, like so:
 
-    <link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
-    <script src="websentials.js"></script>
+```html
+<link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
+<script src="websentials.js"></script>
+```
 
 Features
 =
@@ -33,11 +35,15 @@ Buttons are useful for making links stand out, for example, a download or read m
 
 Here is an example regular (gray) button:
 
-    <button>Button text here</button>
-    
+```html
+<button>Button text here</button>
+```
+
 Say we want to get fancy and add a little blue to it:
 
-    <button class="btn-blue">Oooh! A pretty blue button!</button>
+```html
+<button class="btn-blue">Oooh! A pretty blue button!</button>
+```
     
 This is good for a sorta-non-important confirmation button.
 
@@ -45,25 +51,32 @@ To make any button larger than usual, to grab attention, just add the `btn-big` 
 
 Example:
 
-    <!-- Big blue button -->
-    <button class="btn-blue btn-big">Here is a big confirm button</button>
-    
-    <!--Big regular button -->
-    <button class="btn-big">Big button!</button>
+```html
+<!-- Big blue button -->
+<button class="btn-blue btn-big">Here is a big confirm button</button>
 
-If you want the button to look dangerous or a developer action, you can make it red with `btn-red` class. Again, you can use this class again with `btn-big`.
+<!--Big regular button -->
+<button class="btn-big">Big button!</button>
+```
 
+If you want the button to look dangerous or a developer action (sort of like the repo DangerZone&trade;, you can make it red with `btn-red` class. Again, you can use this class again with `btn-big`.
+
+```html
     <button class="btn-red">Oh crap, this might mess up something!</button>
+```
 
 A better confirmation button than `btn-blue` is `btn-green` for a good action.
 
+```html
     <button class="btn-green">This is a green button</button>
+```
 
 Error messages
 -
 
 If you want to display an error to a user on your website, you can use the error messages.
 
+```html
     <div class="error" id="someError" desc="This is the name in listErrors()">
     <div class="error-header">
       Crap, something went wrong with the code ._.
@@ -76,6 +89,7 @@ If you want to display an error to a user on your website, you can use the error
       <button class="btn btn-green">Fix it</button>
     </div>
     </div>
+```
 
 Wasn't that confusing? Here's the breakdown. For the main error box, put the class `error`. For your header, make another div with `error-header` after the main error div. Put the content inside of the `error-content` div and the buttons (or something else) inside of the `error-footer` div. To make the close button work, you have to put `onClick="hideError('#yourErrorId', 'method-here')"` inside of the exit button and whatever other button you want. The `method-here` is either `slide` or `fade` depending on which one you want. Simple once you have it down.
 
@@ -84,6 +98,7 @@ Success Messages
 
 Success messages are good for indicating that you did something right or a request came through as it should. It's exactly like an error message, except with green:
 
+```html
     <div class="success" id="someGoodMessage" desc="This is the name in listSuccess()">
     <div class="success-header">
       Good job! Something went correctly!
@@ -96,29 +111,38 @@ Success messages are good for indicating that you did something right or a reque
       <button class="btn btn-red">Delete the universe</button>
     </div>
     </div>
+```
 
 There is also another method of hiding the errors:
 
+```javascript
     hideError('#errorIdHere', 'fade');
+```
 
 Restoring errors/success messages
 -
 
 To restore an error or success message, do this function:
 
+```javascript
     restoreError('#idHere');
+```
 
 And if you want to see if an error/success message has been restored (or just want to see them all), do this:
 
+```javascript
     listErrors();
     listSuccess();
+```
 
 Textboxes
 -
 
 We all know about textboxes, let's make one.
 
+```html
     <input id="textbox"></input>
+```
 
 Tada, just add `#textbox` to an input and you have a nice textbox.
 
@@ -127,6 +151,7 @@ Notifications
 
 To make a notification, type this code:
 
+```html
     <div class="notification">
     <div class="notification-header">
       Notification
@@ -135,6 +160,7 @@ To make a notification, type this code:
       Content!
     </div>
     </div>
+```
 
 Progress bars
 -
@@ -142,10 +168,12 @@ Progress bars
 To create a download or anything progress bar, you have to create 2 `div`s.
 The first `div` is the border. The second one is the inner progress bar.
 
+```html
     <div class="progressbar">
     <div class="progressbar-inner" id="progressbar1">
     </div>
     </div>
+```
 
 To use the progress bar, set the width class to `(integer)%`. For example, if I wanted it to be half full, I would set it to `50%`. You can change this with `progressBar('#idOfProgressbar', 'percentage', label);`. The `label` parameter is the ID of the label that shows the current percentage. If you don't have a label, just set it to `'none'`.
 
@@ -159,7 +187,9 @@ functionCreator!&trade;
 
 This is basically a noob-friendly JavaScript compiler. To use it, just use this function.
 
+```javascript
     functionCreator("create a variable test that is equal to 'pie' then create a variable arraything that is an array");
+```
 
 It compiles JavaScript in a noob-friendly way. Use `create a variable variablename` to create a variable. Use `that is equal to` to signify an equal sign. To make a semicolon, just type `then`. To create a variable equal to an array, type in `create a variable variablename that is an array`. It's JavaScript, in plain English!&trade;
 
