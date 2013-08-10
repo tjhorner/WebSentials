@@ -207,5 +207,5 @@ Go ahead, try it!
 
 Todo:
 
- - --Make a `success-close` and `error-close` for all screen sizes.-- Done
+ - ~~Make a `success-close` and `error-close` for all screen sizes.~~ Done
  - Add dialog boxes.
