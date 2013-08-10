@@ -6,12 +6,22 @@ Welcome to WebSentials, here is a quick Getting Started guide on how to use it.
 Getting Started
 =
 
+Getting the code
+-
+
+If you're new to Git, make sure you have [set up Git](https://help.github.com/articles/set-up-git). Once you have that done, execute this one simple line of code.
+
+    git fetch https://github.com/GeekyGamer14/WebSentials.git
+
+Git should now clone the code for WebSentials into a folder called WebSentials, and whenever an update comes along, just execute `git fetch https://github.com/GeekyGamer14/WebSentials.git` again and it will update!
+
+Injecting WebSentials into your HTML.
+-
+
 To get started, first you have to declare WebSentials into your HTML file, like so:
 
     <link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
     <script src="websentials.js"></script>
-
-Or, if you want to use the compressed version, change `websentials.css` and `websentials.js` to `websentials.min.css` and `websentials.min.js`.
 
 Features
 =
@@ -27,7 +37,7 @@ Here is an example regular (gray) button:
     
 Say we want to get fancy and add a little blue to it:
 
-    <button class="btn-confirm">Oooh! A pretty blue button!</button>
+    <button class="btn-blue">Oooh! A pretty blue button!</button>
     
 This is good for a sorta-non-important confirmation button.
 
@@ -35,8 +45,8 @@ To make any button larger than usual, to grab attention, just add the `btn-big` 
 
 Example:
 
-    <!-- Big confirm button -->
-    <button class="btn-confirm btn-big">Here is a big confirm button</button>
+    <!-- Big blue button -->
+    <button class="btn-blue btn-big">Here is a big confirm button</button>
     
     <!--Big regular button -->
     <button class="btn-big">Big button!</button>
@@ -45,14 +55,14 @@ If you want the button to look dangerous or a developer action, you can make it 
 
     <button class="btn-red">Oh crap, this might mess up something!</button>
 
-A better confirmation button than `btn-confirm` is `btn-green` for a good action.
+A better confirmation button than `btn-blue` is `btn-green` for a good action.
 
     <button class="btn-green">This is a green button</button>
 
 Error messages
 -
 
-If you want to display an error to a user on your website, you can use the error messages (still under development, but work.)
+If you want to display an error to a user on your website, you can use the error messages.
 
     <div class="error" id="someError" desc="This is the name in listErrors()">
     <div class="error-header">
@@ -98,7 +108,7 @@ To restore an error or success message, do this function:
 
     restoreError('#idHere');
 
-And if you want to see if an error/succes message has been restored (or just want to see them all), do this:
+And if you want to see if an error/success message has been restored (or just want to see them all), do this:
 
     listErrors();
     listSuccess();
@@ -110,7 +120,7 @@ We all know about textboxes, let's make one.
 
     <input id="textbox"></input>
 
-Tada, just add `#textbox` to an input and you have a nice textbox :).
+Tada, just add `#textbox` to an input and you have a nice textbox.
 
 Notifications
 -
@@ -138,6 +148,20 @@ The first `div` is the border. The second one is the inner progress bar.
     </div>
 
 To use the progress bar, set the width class to `(integer)%`. For example, if I wanted it to be half full, I would set it to `50%`. You can change this with `progressBar('#idOfProgressbar', 'percentage', label);`. The `label` parameter is the ID of the label that shows the current percentage. If you don't have a label, just set it to `'none'`.
+
+Accept buttons
+-
+
+To make an accept button (hit enter to click), just add `id="accept"` to a button and you're all set!
+
+functionCreator!&trade;
+-
+
+This is basically a noob-friendly JavaScript compiler. To use it, just use this function.
+
+    functionCreator("create a variable test that is equal to 'pie' then create a variable arraything that is an array");
+
+It compiles JavaScript in a noob-friendly way. Use `create a variable variablename` to create a variable. Use `that is equal to` to signify an equal sign. To make a semicolon, just type `then`. To create a variable equal to an array, type in `create a variable variablename that is an array`. It's JavaScript, in plain English!&trade;
 
 Todo:
 
