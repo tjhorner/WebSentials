@@ -20,6 +20,9 @@
 		Examples:
 		<h1>Error message</h1>
 		<div class="error" id="boo" desc="Sample error message">
+		<div class="error-close" onClick="hideError('#boo', 'slide')">
+			&times;
+		</div>
 		<div class="error-header">
 			Errr... something went wrong...
 		</div>
@@ -43,6 +46,9 @@
 
 		<h1>Success message (This one uses <code>hideError('#id', 'fade')</code>)</h1>
 		<div class="success" id="yay" desc="Sample success message">
+		<div class="success-close" onClick="hideError('#yay', 'fade')">
+			&times;
+		</div>
 		<div class="success-header">
 		Yay! You did something.
 		</div>
