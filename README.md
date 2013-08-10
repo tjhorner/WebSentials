@@ -45,8 +45,8 @@ To make any button larger than usual, to grab attention, just add the `btn-big` 
 
 Example:
 
-    <!-- Big confirm button -->
-    <button class="btn-confirm btn-big">Here is a big confirm button</button>
+    <!-- Big blue button -->
+    <button class="btn-blue btn-big">Here is a big confirm button</button>
     
     <!--Big regular button -->
     <button class="btn-big">Big button!</button>
@@ -55,14 +55,14 @@ If you want the button to look dangerous or a developer action, you can make it 
 
     <button class="btn-red">Oh crap, this might mess up something!</button>
 
-A better confirmation button than `btn-confirm` is `btn-green` for a good action.
+A better confirmation button than `btn-blue` is `btn-green` for a good action.
 
     <button class="btn-green">This is a green button</button>
 
 Error messages
 -
 
-If you want to display an error to a user on your website, you can use the error messages (still under development, but work.)
+If you want to display an error to a user on your website, you can use the error messages.
 
     <div class="error" id="someError" desc="This is the name in listErrors()">
     <div class="error-header">
@@ -108,7 +108,7 @@ To restore an error or success message, do this function:
 
     restoreError('#idHere');
 
-And if you want to see if an error/succes message has been restored (or just want to see them all), do this:
+And if you want to see if an error/success message has been restored (or just want to see them all), do this:
 
     listErrors();
     listSuccess();
@@ -120,7 +120,7 @@ We all know about textboxes, let's make one.
 
     <input id="textbox"></input>
 
-Tada, just add `#textbox` to an input and you have a nice textbox :).
+Tada, just add `#textbox` to an input and you have a nice textbox.
 
 Notifications
 -
