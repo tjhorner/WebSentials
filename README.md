@@ -78,6 +78,9 @@ If you want to display an error to a user on your website, you can use the error
 
 ```html
 <div class="error" id="someError" desc="This is the name in listErrors()">
+	<div class="error-close" onClick="hideError('#someError', 'slide')">
+		&times;
+	</div>
     <div class="error-header">
         Crap, something went wrong with the code ._.
     </div>
@@ -100,6 +103,9 @@ Success messages are good for indicating that you did something right or a reque
 
 ```html
 <div class="success" id="someGoodMessage" desc="This is the name in listSuccess()">
+	<div class="success-close" onClick="hideError('#someGoodMessage', 'slide')">
+		&times;
+	</div>
     <div class="success-header">
         Good job! Something went correctly!
     </div>
@@ -201,5 +207,5 @@ Go ahead, try it!
 
 Todo:
 
- - Make a `success-close` and `error-close` for all screen sizes.
+ - --Make a `success-close` and `error-close` for all screen sizes.-- Done
  - Add dialog boxes.
