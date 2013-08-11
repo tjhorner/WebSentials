@@ -92,6 +92,10 @@
 		Percentage (with % sign)<input id="textbox"></input>
 		<button class="btn-green" id="setprogress" onclick="progressBar('#progress', $('#textbox').val(), '#progresslabel');">Set progress bar</button>
 		<button class="btn-red" onclick="progressBar('#progress', '0%', '#progresslabel');">Reset progress bar</button>
+		<br></br>
+		<h1>Tooltips</h1>
+		<button onmouseover="createTooltip(this, 'Good job!')">Hover over me!</button>
+		<br></br>
 		<div id="footer">&copy; GeekyGamer14 2013</div>
 	<script>
 $("#textbox").keyup(function(event){

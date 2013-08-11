@@ -146,8 +146,13 @@ function createTooltip(elem, tooltipText){
 
 function deleteTooltips(){
 	$('.tooltip').css('opacity', '0');
+	var tooltipsRemoved = $('.tooltip').size();
 	setTimeout(function(){
 		$('.tooltip').remove();
 	}, 200);
-	console.log('all tooltips removed, sir.');
+	if(tooltipsRemoved > 1){
+		console.log(tooltipsRemoved + ' tooltips removed, sir.');
+	}else{
+		console.log(tooltipsRemoved + ' tooltip removed, sir.');
+	}
 }

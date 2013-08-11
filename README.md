@@ -205,6 +205,15 @@ var test = 'pie' ; var arraything = new Array()
 
 Go ahead, try it!
 
+Tooltips
+-
+
+To create a tooltip, add the attribute `onmouseover="createTooltip(this, 'Tooltip text')"`. You can do this from the console, too! This will also remove the tooltip automagically.
+
+```html
+<p>Blah blah blah <span onmouseover="createTooltip(this, 'More blah')">more info</span> blah.</p>
+```
+
 Todo:
 
  - ~~Make a `success-close` and `error-close` for all screen sizes.~~ Done
