@@ -190,6 +190,11 @@ button.btn-red:active{
 	background-color: #c73a29;
 }
 
+/*disabled, no matter what*/
+button.disabled{
+	cursor: default;
+	color: gray;
+}
 /*End buttons*/
 
 /*glowy bootstrap-like textboxes*/
