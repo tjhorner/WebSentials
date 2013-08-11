@@ -249,10 +249,21 @@ button.btn-red:active{
 	border-radius: 3px;
 }
 
+
 .progressbar-inner .red{
 	background-color: red;
 }
 
 .progressbar-inner .green{
 	background-color: green;
+}
+
+.tooltip{
+	transition: opacity .2s;
+	font-size: 20px;
+	opacity: 0;
+	border: 1px solid black;
+	background-color: gray;
+	border-radius: 5px;
+	width: 300px;
 }

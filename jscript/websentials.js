@@ -135,6 +135,19 @@ function functionCreator(str){
 	return final;
 }
 
+/*tooltips*/
+function createTooltip(elem, tooltipText){
+	$(elem).attr('onmouseout', 'deleteTooltips()');
+	$(elem).after('<p class="tooltip">' + tooltipText + '</p>');
+	setTimeout(function(){
+		$('.tooltip').css('opacity', '1');
+	});
+}
 
-
-
+function deleteTooltips(){
+	$('.tooltip').css('opacity', '0');
+	setTimeout(function(){
+		$('.tooltip').remove();
+	}, 200);
+	console.log('all tooltips removed, sir.');
+}
