@@ -135,6 +135,24 @@ function functionCreator(str){
 	return final;
 }
 
+/*tooltips*/
+function createTooltip(elem, tooltipText){
+	$(elem).attr('onmouseout', 'deleteTooltips()');
+	$(elem).after('<p class="tooltip">' + tooltipText + '</p>');
+	setTimeout(function(){
+		$('.tooltip').css('opacity', '1');
+	});
+}
 
-
-
+function deleteTooltips(){
+	$('.tooltip').css('opacity', '0');
+	var tooltipsRemoved = $('.tooltip').size();
+	setTimeout(function(){
+		$('.tooltip').remove();
+	}, 200);
+	if(tooltipsRemoved > 1){
+		console.log(tooltipsRemoved + ' tooltips removed, sir.');
+	}else{
+		console.log(tooltipsRemoved + ' tooltip removed, sir.');
+	}
+}
