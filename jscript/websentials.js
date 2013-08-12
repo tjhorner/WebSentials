@@ -156,3 +156,11 @@ function deleteTooltips(){
 		console.log(tooltipsRemoved + ' tooltip removed, sir.');
 	}
 }
+
+/*dialogs*/
+function createDialog(content){
+	$('body').prepend('<div class="dialog">' + content + '</div><span class="overlay"></span>');
+	setTimeout(function(){
+		$('.dialog').css('opacity' ,'1');
+	}, 1);
+}
