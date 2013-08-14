@@ -140,3 +140,4 @@ function createDialog(header, content, accept, acceptAction, deny){
 		$('.dialog').css('opacity' ,'1');
 	}, 1);
 }
+
