@@ -240,6 +240,10 @@ function newCreateDialog(){
 	createDialog('Title', '<b id="theid">This is bold</b>', 'Accept', 'Exit');
 }
 ```
+Circular anything
+-
+
+To make anything circular, just add the class `circle` to it.
 
 Todo:
 
