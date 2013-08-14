@@ -304,3 +304,18 @@ button.disabled{
 .dialog-content{
 	padding-bottom: 5px;
 }
+
+/*responsive css to mobiles*/
+/*phones*/
+@media (max-width: 767px){
+	body{
+		width: 767px;
+	}
+}
+ 
+/*landscape phones*/
+@media (max-width: 480px){
+	body{
+		width: 480px;
+	}
+}
