@@ -214,7 +214,30 @@ To create a tooltip, add the attribute `onmouseover="createTooltip(this, 'Toolti
 <p>Blah blah blah <span onmouseover="createTooltip(this, 'More blah')">more info</span> blah.</p>
 ```
 
+Dialogs
+-
+
+Dialogs are clean, popup boxes that appear with a simple command...
+
+```javascript
+createDialog('Dialog title', 'Dialog content', 'Green button text', 'Green button action', 'Close button text');
+```
+
+The close button automatically closes the dialog.
+
+Including HTML in dialogs
+-
+
+It's tricky embedding HTML into dialogs. Here is a simple function that creates a box with a bold element that has an `id` attribute.
+
+```javascript
+function newCreateDialog(){
+	var html = "<b id='theid'>This is bold</b>";
+	createDialog('Title', html, 'Accept', 'Exit');
+}
+```
+
 Todo:
 
  - ~~Make a `success-close` and `error-close` for all screen sizes.~~ Done
- - Add dialog boxes.
+ - ~~Add dialog boxes.~~ Done! I really like dialog boxes :3
