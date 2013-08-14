@@ -5,29 +5,6 @@
 
 //hide error/success
 function hideError(elem, method){
-	if($(elem).attr('class') != 'error'){
-		if($(elem).attr('class') != 'success'){
-			console.error(elem && ' is not an error or a success message, ignoring command.');
-		}else{
-			if(method == 'slide'){
-				$(elem).slideUp();
-				$(elem).css('opacity', '0');
-				$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-				console.log('hid error with method slide');
-			}else{
-				if(method == 'fade'){
-					$(elem).css('opacity', '0');
-					$(elem).attr('desc', '(hidden) '.concat($(elem).attr('desc')));
-					setTimeout(function(){
-						$(elem).css('display', 'none');
-					}, 400);
-					console.log('hid error with method fade');
-				}else{
-					console.error('websentials.hideError: invalid hide method. valid methods are slide or fade.');
-				}
-			}
-		}
-	}else{
 		if(method == 'slide'){
 			$(elem).slideUp();
 			$(elem).css('opacity', '0');
@@ -43,11 +20,9 @@ function hideError(elem, method){
 				console.log('hid error with method fade');
 			}else{
 				console.error('websentials.hideError: invalid hide method. valid methods are slide or fade.');
-			}
 		}
 	}
 }
-
 //restore error (or just show one)
 function restoreError(elem){
 	var elemID = elem.replace('#', '');
@@ -158,8 +133,9 @@ function deleteTooltips(){
 }
 
 /*dialogs*/
-function createDialog(content){
-	$('body').prepend('<div class="dialog">' + content + '</div><span class="overlay"></span>');
+function createDialog(header, content, accept, acceptAction, deny){
+	var thescript = "hideError('.dialog','slide')";
+	$('body').prepend('<div class="dialog"><div class="dialog-header">' + header + '</div><div class="dialog-content">' + content +'</div><div class="dialog-footer"><button class="btn-green" onClick="' + acceptAction +'">' + accept + '</button><button onClick='+ thescript +'>' + deny + '</button></div>');
 	setTimeout(function(){
 		$('.dialog').css('opacity' ,'1');
 	}, 1);
