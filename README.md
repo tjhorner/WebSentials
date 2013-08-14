@@ -228,12 +228,11 @@ The close button automatically closes the dialog.
 Including HTML in dialogs
 -
 
-It's tricky embedding HTML into dialogs. Here is a simple function that creates a box with a bold element that has an `id` attribute.
+It's tricky embedding HTML into dialogs if you are using `onClick`. Here is a simple function that creates a box with a bold element that has an `id` attribute.
 
 ```javascript
 function newCreateDialog(){
-	var html = "<b id='theid'>This is bold</b>";
-	createDialog('Title', html, 'Accept', 'Exit');
+	createDialog('Title', '<b id="theid">This is bold</b>', 'Accept', 'Exit');
 }
 ```
 
