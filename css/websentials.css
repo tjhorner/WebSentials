@@ -282,7 +282,7 @@ button.disabled{
 	background-color: white;
 	border: 1px solid #2221d4;
 	font-size: 13px;
-	width: 300px;
+	width: 600px;
 	padding: 6px 10px;
 	border-radius: 3px;
 	text-align: left;
@@ -290,8 +290,8 @@ button.disabled{
 	float: center;
    	left: 50%;
    	top: 50%; 
-   	margin-left: -150px;
-   	margin-top: -150px;
+   	margin-left: -300px;
+   	margin-top: -300px;
 	opacity: 0;
 }
 .dialog-header{
