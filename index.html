@@ -34,6 +34,10 @@
 		.success{
 			color: black;
 		}
+		h1{
+			text-transform: lowercase;
+		}
+		
 	</style>
 </head>
 <body nocopy="true" bgcolor="black">
@@ -41,7 +45,9 @@
 		<h1>Welcome to WebSentials.</h1>
 		<h2>Easy-to-use, cross browser support essentials for your website.</h2>
 		<a href="https://github.com/GeekyGamer14/WebSentials/releases"><button class="btn-big btn-green">Download WebSentials</button></a>
-		<p id="fork"><iframe src="http://ghbtns.com/github-btn.html?user=GeekyGamer14&repo=WebSentials&type=fork&count=true&size=large"allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
+		<br></br>
+		<h1>spread the word!</h1>
+		<div id="share"><iframe src="http://ghbtns.com/github-btn.html?user=GeekyGamer14&repo=WebSentials&type=fork&count=true&size=large"allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe><div class="g-plus" data-action="share"></div></div>
 		<br></br>
 		<p>WebSentials is built for and tested on</p>
 		<p>Google Chrome</p><p><img src="img/icons/chrome.png" id="chromeicon" height="85" class="chrome"></img></p>
@@ -165,5 +171,12 @@ $("#textbox").keyup(function(event){
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
+	<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>	
 </html>
