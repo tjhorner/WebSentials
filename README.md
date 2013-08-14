@@ -1,3 +1,8 @@
+(READ THIS FIRST) Feature requests
+=
+
+For feature requests, [create a new issue](https://github.com/GeekyGamer14/WebSentials/issues/new) and tag it as `feature-req`. I want to hear your feedback as well!
+
 WebSentials
 ===
 
