@@ -327,3 +327,10 @@ button.disabled{
 	-moz-border-radius: 500px;
 	border-radius: 500px;
 }
+
+/*tags*/
+.tag{
+        border-radius: 5px;
+        text-color: white !important;
+        text-size: 10px;
+}
