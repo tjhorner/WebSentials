@@ -268,7 +268,7 @@ button.disabled{
 	transition: opacity .2s;
 	font-size: 20px;
 	opacity: 0;
-	position: fixed;
+	position: relative;
 	border: 1px solid black;
 	background-color: gray;
 	border-radius: 5px;
