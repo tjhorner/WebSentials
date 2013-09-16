@@ -245,7 +245,8 @@ Circular anything
 
 To make anything circular, just add the class `circle` to it.
 
-Todo:
+Todo
+-
 
  - ~~Make a `success-close` and `error-close` for all screen sizes.~~ Done
  - ~~Add dialog boxes.~~ Done! I really like dialog boxes :3
