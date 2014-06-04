@@ -8,23 +8,14 @@ Welcome to WebSentials, here is a quick Getting Started guide on how to use it.
 Getting Started
 =
 
-Getting the code
+Using WS on your site
 -
 
-If you're new to Git, make sure you have [set up Git](https://help.github.com/articles/set-up-git). Once you have that done, execute this one simple line of code.
-
-    git fetch https://github.com/GeekyGamer14/WebSentials.git
-
-Git should now clone the code for WebSentials into a folder called WebSentials, and whenever an update comes along, just execute `git fetch https://github.com/GeekyGamer14/WebSentials.git` again and it will update!
-
-Injecting WebSentials into your HTML.
--
-
-To get started, first you have to declare WebSentials into your HTML file, like so:
+Do this:
 
 ```html
-<link rel="stylesheet" href="css/websentials.css" type="text/css"></link>
-<script src="websentials.js"></script>
+<link rel="stylesheet" href="/path/to/css/websentials.css" type="text/css"></link>
+<script src="/path/to/websentials.js"></script>
 ```
 
 Features
