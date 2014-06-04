@@ -1,5 +1,5 @@
 // WebSentials
-// By GeekyGamer14 (https://github.com/GeekyGamer14/WebSentials) - Open source web essentials.
+// By GeekyGamer14 (https://github.com/GeekyGamer14/WebSentials) - So terrible, I made this like a year ago.
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js
 
 
@@ -77,16 +77,6 @@ if($('#accept') != []){
 	});
 }
 
-/* built-in function creator!*/
-function functionCreator(str){
-	var s1 = str.replace(/create a variable/gi, 'var');
-	var s2 = s1.replace(/that is equal to/gi, '=');
-	var s3 = s2.replace(/then/gi, ';');
-	var final = s3.replace(/that is an array/gi, '= new Array()');
-	console.log('Your function: ');
-	return final;
-}
-
 /*tooltips*/
 function createTooltip(elem, tooltipText){
 	$(elem).attr('onmouseout', 'deleteTooltips()');
@@ -109,7 +99,7 @@ function deleteTooltips(){
 	}
 }
 
-/*dialogs*/
+/* dialogs, terrible. */
 function createDialog(header, content, accept, acceptAction, deny){
 	var thescript = "hideError('.dialog','slide')";
 	$('body').prepend('<div class="dialog"><div class="dialog-header">' + header + '</div><div class="dialog-content">' + content +'</div><div class="dialog-footer"><button class="btn-green" onClick="' + acceptAction +'">' + accept + '</button><button onClick='+ thescript +'>' + deny + '</button></div>');
