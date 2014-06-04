@@ -193,23 +193,6 @@ Accept buttons
 
 To make an accept button (hit enter to click), just add `id="accept"` to a button and you're all set!
 
-functionCreator!&trade;
--
-
-The functionCreator&trade; takes the concept of coding to an entirely new level, making it easy for everybody to program. It takes simple phrases such as `create a variable`, `that is equal to` and `that is an array` and then returns JavaScript code, making JavaScript easier to learn for newbies. For example, this:
-
-```javascript
-functionCreator("create a variable test that is equal to 'pie' then create a variable arraything that is an array");
-```
-
-Would return this:
-
-```javascript
-var test = 'pie' ; var arraything = new Array()
-```
-
-Go ahead, try it!
-
 Tooltips
 -
 
