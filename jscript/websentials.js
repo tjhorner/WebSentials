@@ -58,35 +58,12 @@ function progressBar(progressBarId, percentage, label){
 	if(label == 'none'){
 		console.log('no label selected, ignoring');
 	}else{
-		setTimeout(function(){
+		var randInterval = setInterval(function(){
 			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		setTimeout(function(){
-			$(label).text(Math.random() * (100 - 0.0) + 0);
-		}, 100);
-		}, 100);
-		}, 100);
-		}, 100);
-		}, 100);
-		}, 100);
-		}, 100);
-		}, 100);
 		}, 100);
 		setTimeout(function(){
 			$(label).text(percentage);
+			clearInterval(randInterval);
 		}, 1000);
 	}
 }
