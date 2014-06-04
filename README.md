@@ -1,10 +1,7 @@
-(READ THIS FIRST) Feature requests
-=
-
-For feature requests, [create a new issue](https://github.com/GeekyGamer14/WebSentials/issues/new) and tag it as `feature-req`. I want to hear your feedback as well!
-
 WebSentials
 ===
+
+**THIS PROJECT IS BAD, I was really terrible at web development when I made this. This is going to get updated A LOT in the next few weeks.**
 
 Welcome to WebSentials, here is a quick Getting Started guide on how to use it.
 
@@ -232,4 +229,4 @@ Todo
 -
 
  - ~~Make a `success-close` and `error-close` for all screen sizes.~~ Done
- - ~~Add dialog boxes.~~ Done! I really like dialog boxes :3
+ - ~~Add dialog boxes.~~ Done
